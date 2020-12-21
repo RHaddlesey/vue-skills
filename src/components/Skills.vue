@@ -7,7 +7,7 @@
         </li>
       </ul>
       
-      <div v-bind:class="alertObject"></div>
+      <div v-bind:style="{ backgroundColor: bgColor, width: bgWidth, height: bgHeight }"></div>
     </div>
   </div>
 </template>
@@ -22,9 +22,9 @@ export default {
         { "skill": "React" },
         { "skill": "Svelte" },
       ],
-      alertObject: {
-        alert: true,
-      }
+      bgColor: 'yellow',
+      bgWidth: '100%',
+      bgHeight: '30px'
     }
   }
 }
